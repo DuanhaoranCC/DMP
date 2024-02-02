@@ -1112,7 +1112,7 @@ def load_nn():
 def load_oag():
     # with open("./data/OAG/Mater_paper.npy", "rb") as f:
     #     paper_feat = torch.from_numpy(np.load(f)).float()
-    with open("./data/OAG/Mater_graph_venue.pk", "rb") as f:
+    # with open("./data/OAG/Mater_graph_venue.pk", "rb") as f:
     # with open("./data/OAG/Engin_graph_venue.pk", "rb") as f:
     # with open("./data/OAG/Mater_L2.pk", "rb") as f:
     # with open("./data/OAG/Engin_L2.pk", "rb") as f:
@@ -1120,7 +1120,7 @@ def load_oag():
     # with open("./data/OAG/Art_L2.pk", "rb") as f:
     # with open("./data/OAG/Chem_graph_venue.pk", "rb") as f:
     # with open("./data/OAG/Art_graph_venue.pk", "rb") as f:
-    # with open("./data/OAG/Bus_graph_venue.pk", "rb") as f:
+    with open("./data/OAG/Bus_graph_venue.pk", "rb") as f:
         dataset = pickle.load(f)
     data = HeteroData()
     # 'paper', 'PV_Conference', 'venue'
@@ -1161,10 +1161,10 @@ def load_oag():
     #     labels[key, dataset["labels"][key]] = 1
     # data['P'].y = labels
     # Mater
-    data['P'].x = make_sparse_eye(183650)
-    data['V'].x = make_sparse_eye(1094)
-    data['A'].x = make_sparse_eye(356177)
-    data['F'].x = make_sparse_eye(21088)
+    # data['P'].x = make_sparse_eye(183650)
+    # data['V'].x = make_sparse_eye(1094)
+    # data['A'].x = make_sparse_eye(356177)
+    # data['F'].x = make_sparse_eye(21088)
     # data['P'].x = torch.Tensor(183650, 64).uniform_(-0.5, 0.5)
     # data['V'].x = torch.Tensor(1094, 64).uniform_(-0.5, 0.5)
     # data['A'].x = torch.Tensor(356177, 64).uniform_(-0.5, 0.5)
@@ -1205,10 +1205,10 @@ def load_oag():
     # data['A'].x = make_sparse_eye(18858)
     # data['F'].x = make_sparse_eye(15919)
     # Bus
-    # data['P'].x = make_sparse_eye(31107)
-    # data['V'].x = make_sparse_eye(1748)
-    # data['A'].x = make_sparse_eye(35971)
-    # data['F'].x = make_sparse_eye(10214)
+    data['P'].x = make_sparse_eye(31107)
+    data['V'].x = make_sparse_eye(1748)
+    data['A'].x = make_sparse_eye(35971)
+    data['F'].x = make_sparse_eye(10214)
     ###############################################################
     data['P'].y = torch.from_numpy(dataset['labels'] + 1)
     ###############################################################

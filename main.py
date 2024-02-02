@@ -81,7 +81,7 @@ def main(space):
 
 if __name__ == '__main__':
     # Mater
-    main({'attr1': 0.8, 'attr2': 0.8, 'b': 2.0, 'epoch': 3500, 'feat': 0.0, 'lr': 0.0001, 'w': 0.0005, 'acc': 0.51679})
+    # main({'attr1': 0.8, 'attr2': 0.8, 'b': 2.0, 'epoch': 3500, 'feat': 0.0, 'lr': 0.0001, 'w': 0.0005, 'acc': 0.51679})
     # Field
     # main({'attr1': 0.3, 'attr2': 0.9, 'b': 1.9, 'epoch': 8000, 'feat': 0.3, 'lr': 8e-5, 'w': 0.001, 'acc': 0.4916})
     # ML
@@ -93,7 +93,7 @@ if __name__ == '__main__':
     # Field
     # main({'attr1': 0.5, 'attr2': 0.0, 'b': 1.5, 'epoch': 2000, 'feat': 0.0, 'lr': 0.008, 'w': 0.0001, 'acc': 0.50378})
     # Business
-    # main({'attr1': 0.6, 'attr2': 0.8, 'b': 0.7, 'epoch': 2400, 'feat': 0.5, 'lr': 0.0005, 'w': 0.0001, 'acc': 0.4562})
+    main({'attr1': 0.6, 'attr2': 0.8, 'b': 0.7, 'epoch': 2400, 'feat': 0.5, 'lr': 0.0005, 'w': 0.0001, 'acc': 0.4562})
     # Field
     # main({'attr1': 0.6, 'attr2': 0.8, 'b': 0.2, 'epoch': 10000, 'feat': 0.7, 'lr': 0.0005, 'w': 1e-5, 'acc': 0.317})
     # Art
