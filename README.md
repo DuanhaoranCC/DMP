@@ -12,5 +12,5 @@ pip install -r requirements.txt
 We give an example for the Business dataset:
 
 ```python
-python train.py
+python main.py
 ```
